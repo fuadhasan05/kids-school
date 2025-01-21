@@ -23,6 +23,17 @@ body {
     display: flex;
 }
 
+.btn-primary{
+    padding: 8px 30px;
+    color: white;
+    background-color: black;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin: 20px 0;
+
+}
+
 /* header style */
 
 
@@ -77,7 +88,80 @@ body {
     font-weight: 1rem;
     color: #FFFFFF;
     padding: 10px 40px;
-    border-radius: 8px;
+    border-radius: 12px;
     border: none;
     background-color: orange;
+}
+
+/* Banner Style */
+.banner{
+    margin: 20px 0 ;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.banner-content{
+    gap: 20px;
+}
+
+.banner-title{
+    font-weight: 700;
+    font-size: 3.8rem;
+    margin: 20px 0;
+}
+
+.banner-title1{
+    color: orange;
+}
+
+.banner-title2{
+    color: skyblue;
+}
+
+.banner-img{
+    width: 100%;
+}
+
+
+/* responsive media query */
+
+.nav-hr{
+    display: none;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+@media screen and (max-width: 576px){
+    .brand-name, .button, .nav-links{
+        display: none;
+    }
+
+    .nav-links, .banner{
+        flex-direction: column;
+    }
+
+    .nav-hr{
+        display: block;
+        padding: 1px;
+        border: none;
+        background-color: orange;
+    }
+
+    .menu-toggle{
+        display: block;
+        font-size: 30px;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+    }
+
+    .banner-content, .btn-primary{
+        text-align: center;
+    }
+
+
 }
