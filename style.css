@@ -23,7 +23,7 @@ body {
     display: flex;
 }
 
-.btn-primary{
+.btn-primary {
     padding: 8px 30px;
     color: white;
     background-color: black;
@@ -31,11 +31,9 @@ body {
     font-weight: 500;
     font-size: 1.25rem;
     margin: 20px 0;
-
 }
 
-/* header style */
-
+/* Header Style */
 
 /* Navbar Style */
 .navbar {
@@ -53,37 +51,37 @@ body {
     text-decoration: none;
 }
 
-.brand{
+.brand {
     align-items: center;
 }
 
-.brand-name{
+.brand-name {
     font-weight: 700;
     font-size: 2rem;
 }
 
-.menu1{
+.menu1 {
     font-weight: 700;
     font-size: 1.25rem;
     color: orange;
 }
 
-.menu2{
+.menu2 {
     font-size: 1.25rem;
     color: skyblue;
 }
 
-.menu3{
+.menu3 {
     font-size: 1.25rem;
     color: #05D4DF;
 }
 
-.menu4{
+.menu4 {
     font-size: 1.25rem;
     color: #5D58EF;
 }
 
-.button{
+.button {
     font-weight: 500px;
     font-weight: 1rem;
     color: #FFFFFF;
@@ -94,74 +92,193 @@ body {
 }
 
 /* Banner Style */
-.banner{
-    margin: 20px 0 ;
+.banner {
+    margin: 20px 0;
     display: flex;
     align-items: center;
     gap: 50px;
 }
 
-.banner-content{
+.banner-content {
     gap: 20px;
 }
 
-.banner-title{
+.banner-title {
     font-weight: 700;
     font-size: 3.8rem;
     margin: 20px 0;
 }
 
-.banner-title1{
+.banner-title1 {
     color: orange;
 }
 
-.banner-title2{
+.banner-title2 {
     color: skyblue;
 }
 
-.banner-img{
+.banner-img {
     width: 100%;
 }
+
+/* Main Section */
+/* Standard Curriculum Style */
+.curriculum {
+    margin: 60px 0;
+    background-image: url(./assets/bg.png);
+    background-size: cover;
+}
+
+.curriculum-h3 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700px;
+}
+
+.curriculum-cards {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 80px 0;
+    gap: 28px;
+}
+
+.curriculum-h {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.curriculum-p {
+    margin: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #808080;
+}
+
+.curriculum-card1,
+.curriculum-card2,
+.curriculum-card3 {
+    border-radius: 18px;
+    padding: 60px 20px;
+}
+
+.curriculum-card1 {
+    background: linear-gradient(to bottom, #DEF5FF, #FFFFFF);
+    border: 1px solid #DEF5FF;
+}
+
+.curriculum-card2 {
+    background: linear-gradient(to bottom, #FFF4DC, #FFFFFF);
+    border: 1px solid #FFF4DC;
+}
+
+.curriculum-card3 {
+    background: linear-gradient(to bottom, #F2E8FF, #FFFFFF);
+    border: 1px solid #F2E8FF;
+}
+
+.curriculum-a1 {
+    text-decoration: none;
+    color: #64C8FF;
+}
+
+.curriculum-a2 {
+    text-decoration: none;
+    color: #F0AA00;
+}
+
+.curriculum-a3 {
+    text-decoration: none;
+    color: #8700FF;
+}
+
+
+
+.curriculum-btn{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.curriculum-circle-btn {
+    width: 60px;
+    height: 60px;
+    background-color: #F4A132;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.curriculum-circle-btn span {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.left-arrow::before {
+    content: '<';
+}
+
+.right-arrow::before {
+    content: '>';
+}
+
 
 
 /* responsive media query */
 
-.nav-hr{
+.nav-hr {
     display: none;
 }
 
-.menu-toggle{
+.menu-toggle {
     display: none;
 }
 
-@media screen and (max-width: 576px){
-    .brand-name, .button, .nav-links{
+/* Small Device */
+@media screen and (max-width: 576px) {
+
+    .brand-name,
+    .button,
+    .nav-links {
         display: none;
     }
 
-    .nav-links, .banner{
+    .nav-links,
+    .banner,
+    .curriculum-cards {
         flex-direction: column;
     }
 
-    .nav-hr{
+    .nav-hr {
         display: block;
         padding: 1px;
         border: none;
         background-color: orange;
     }
 
-    .menu-toggle{
+    .menu-toggle {
         display: block;
         font-size: 30px;
     }
 
-    .banner{
+    .banner {
         flex-direction: column-reverse;
     }
 
-    .banner-content, .btn-primary{
+    .banner-content,
+    .btn-primary {
         text-align: center;
     }
+
+    .curriculum-h3 {
+        font-size: 1.75rem;
+    }
+
+
 
 
 }
