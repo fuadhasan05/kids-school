@@ -35,8 +35,7 @@ header {
 }
 
 .curriculum-h3,
-.stories-title
- {
+.stories-title {
     text-align: center;
     font-size: 3rem;
     font-weight: 700px;
@@ -232,6 +231,13 @@ header {
     content: '>';
 }
 
+/*  */
+marquee{
+    font-size: 2rem;
+    font-weight: 700;
+    color: red;
+  }
+
 
 /* Stories Container Style */
 .stories {
@@ -252,28 +258,54 @@ header {
     gap: 20px;
 }
 
+.container1 {
+    overflow: hidden;
+}
+
+.card1 {
+    width: 540px;
+    height: 630px;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.card1 img {
+    margin-top: 0;
+}
 
 .container2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    border-radius: 10px;
 }
 
 .card {
+    width: 290px;
+    height: 305px;
     background: #ffffff;
     border-radius: 10px;
     overflow: hidden;
+}
+
+.card img {
+    margin-top: 0;
 }
 
 .card-content {
     padding: 30px;
 }
 
+.card-title1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 20px 30px;
+}
+
 .card-title {
     font-size: 1rem;
     font-weight: 700;
-    margin: 20px 0;
+    padding: 20px 30px;
 }
 
 .date-badge-1 {
@@ -282,17 +314,35 @@ header {
     font-size: 1rem;
     padding: 10px 15px;
     border-radius: 20px;
+    position: relative;
+    left: 30px;
+    top: -12px;
 }
 
-.date-badge{
+.date-badge {
     background: #95B226;
     color: #fff;
     font-size: 1rem;
     padding: 10px 15px;
     border-radius: 20px;
+    position: relative;
+    left: 30px;
+    top: -12px;
 }
 
-.stories-btn{
+.date-badge3 {
+    background: #5D58F0;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 20px;
+    position: relative;
+    left: 30px;
+    top: -12px;
+}
+
+
+.stories-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -301,7 +351,38 @@ header {
 
 
 
-/* responsive media query */
+/* Footer */
+footer {
+    background-color: #01ACFD;
+    color: #FFFFFF;
+}
+
+.footer-container {
+    justify-content: center;
+    gap: 200px;
+    padding: 80px 0;
+}
+
+.footer-logo{
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about, h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.social-icon,
+img {
+    margin-top: 20px;
+
+}
+
+
+
+/* Responsive Media Query */
 
 .nav-hr {
     display: none;
@@ -310,6 +391,7 @@ header {
 .menu-toggle {
     display: none;
 }
+
 
 /* Small Device */
 @media screen and (max-width: 576px) {
@@ -328,7 +410,9 @@ header {
         flex-direction: column;
     }
 
-    .banner, .curriculum-cards, .stories{
+    .banner,
+    .curriculum-cards,
+    .stories {
         margin: 40px 10px;
     }
 
@@ -348,7 +432,7 @@ header {
         flex-direction: column-reverse;
     }
 
-    .banner-title{
+    .banner-title {
         font-size: 2.25rem;
     }
 
@@ -361,12 +445,44 @@ header {
         font-size: 1.75rem;
     }
 
-    .banner, .curriculum-cards{
+    .banner,
+    .curriculum-cards {
         margin: 40px 10px;
     }
 
+    .container2 {
+        gap: 10px;
+    }
 
+    .card {
+        width: auto;
+    }
 
+    .card-title {
+        padding: 0 10px;
+    }
 
+    .date-badge {
+        font-size: 0.7rem;
+        padding: 2px 5px;
+        position: relative;
+        left: 10px;
+        top: -14px;
+    }
+    
+    .date-badge3 {
+        font-size: 0.7rem;
+        padding: 2px 5px;
+        position: relative;
+        left: 10px;
+        top: -14px;
+    }
+
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+        gap: 50px;
+    }
 
 }
