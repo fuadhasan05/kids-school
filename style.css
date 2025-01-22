@@ -42,7 +42,6 @@ header {
 }
 
 /* Header Style */
-
 /* Navbar Style */
 .navbar {
     justify-content: space-between;
@@ -231,13 +230,12 @@ header {
     content: '>';
 }
 
-/*  */
+/* Marquee Style */
 marquee{
     font-size: 2rem;
     font-weight: 700;
     color: red;
   }
-
 
 /* Stories Container Style */
 .stories {
@@ -341,7 +339,6 @@ marquee{
     top: -12px;
 }
 
-
 .stories-btn {
     display: flex;
     justify-content: center;
@@ -349,9 +346,7 @@ marquee{
     margin-top: 80px;
 }
 
-
-
-/* Footer */
+/* Footer style */
 footer {
     background-color: #01ACFD;
     color: #FFFFFF;
@@ -375,7 +370,6 @@ footer {
     padding: 0;
 }
 
-
 .about, h5 {
     font-size: 1rem;
     font-weight: 400;
@@ -393,9 +387,7 @@ footer {
 }
 
 
-
 /* Responsive Media Query */
-
 .nav-hr {
     display: none;
 }
@@ -403,7 +395,6 @@ footer {
 .menu-toggle {
     display: none;
 }
-
 
 /* Small Device */
 @media screen and (max-width: 576px) {
@@ -496,5 +487,4 @@ footer {
         padding: 0 15px;
         gap: 50px;
     }
-
 }
