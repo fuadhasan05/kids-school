@@ -90,8 +90,8 @@ header {
 }
 
 .button {
-    font-weight: 500px;
-    font-weight: 1rem;
+    font-weight: 600px;
+    font-size: 1rem;
     color: #FFFFFF;
     padding: 10px 40px;
     border-radius: 12px;
@@ -364,9 +364,17 @@ footer {
 }
 
 .footer-logo{
+    font-size: 2rem;
     align-items: center;
     margin-bottom: 20px;
 }
+
+.footer-img{
+    height: 80px;
+    margin: 0 ;
+    padding: 0;
+}
+
 
 .about, h5 {
     font-size: 1rem;
@@ -374,10 +382,14 @@ footer {
     margin: 10px 0;
 }
 
-.social-icon,
-img {
-    margin-top: 20px;
+.social-h4, 
+.about-h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
 
+.footer-icon {
+    margin-top: 20px;
 }
 
 
